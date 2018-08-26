@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<style>
+		@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+	</style>
+		<table border="0" width="600" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; font: 10px Arial, sans-serif; color:#0b0b0b;">
+			<thead>
+				<tr>
+					<td><img src="images/logo.png" alt="" border="0" style="padding: 0 0 10px 0;"></td>
+					<td colspan="2" valign="bottom" align="right" style="padding: 0 0 30px 0; text-transform: uppercase;">
+						<a href="#" style="color:#46b4da; padding: 0 5px; line-height: 15px;" target="_blank">Shawls</a>
+						<a href="#" style="color:#46b4da; padding: 0 5px; line-height: 15px;" target="_blank">Clothing</a>
+						<a href="#" style="color:#46b4da; padding: 0 5px; line-height: 15px;" target="_blank">Bags</a>
+						<a href="#" style="color:#46b4da; padding: 0 10px; line-height: 15px;" target="_blank">Accessories</a>
+						<a href="#" style="color:#46b4da; line-height: 15px;" target="_blank">Sale</a>
+					</td>
+				</tr>
+			</thead>
+			<tbody style="background-color: #faf8f9;">	
+				<tr>
+					<td colspan="3" style="border-top: 5px solid #46b4da; font-size: 20px; padding: 40px 0 20px 30px;">Василий Валентинович, спасибо за ваш заказ!</td>
+				</tr>
+				<tr>
+					<td colspan="3" style="padding: 0 0 20px 30px; line-height: 15px;">Ваша заявка принята. Мы свяжемся с вами в ближайшее время для
+					<br>подтверждения заказа №123415</td>
+				</tr>
+				<tr>
+					<td style="font-size: 20px; padding: 0 0 20px 30px;">Заказ №123415</td>
+					<td colspan="2" align="right" style="padding: 0 30px 20px 0">Дата: 01.04.2016</td>
+				</tr>
+				<tr style="color:#858383;">
+					<td height="30" style="padding: 0 0 0 30px">Название товара</td>
+					<td align="center">Кол-во</td>
+					<td align="right" style="padding: 0 30px 0 0">Сумма</td>
+				</tr>
+				<tr style="font-size: 14px;">
+					<td height="50" style="color:#46b4da; padding: 0 0 0 30px; border-top: 1px solid #d6d7d8; border-bottom: 1px solid #d6d7d8;">Beige Ukrainian scarf</td>
+					<td align="center" style="border-top: 1px solid #d6d7d8; border-bottom: 1px solid #d6d7d8;">1</td>
+					<td align="right" style="padding: 0 30px 0 0; border-top: 1px solid #d6d7d8; border-bottom: 1px solid #d6d7d8;">300$</td>
+				</tr>
+				<tr>
+					<td height="30" style="padding: 0 0 0 30px">Оплата:</td>
+					<td colspan="2" style="text-transform: uppercase;">Наличная</td>
+				</tr>
+				<tr>
+					<td height="30" style="padding: 0 0 0 30px">Покупатель:</td>
+					<td colspan="2">Василий Валентинович,<a href="tel:0­ 937 777 777" value="+380937777777" target="_blank" style="color:#46b4da; line-height: 15px;">+3 8093 777 77 77</a></td>
+				</tr>
+				<tr>
+					<td height="30" style="padding: 0 0 0 30px">Продавец:</td>
+					<td colspan="2"><img src="images/logo_small.png" alt=""></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center" valign="bottom" height="130" style="border-bottom: 5px solid #46b4da;"><img src="images/ornament.png" alt="" style="margin: 0; padding: 0; display: block;"></td>
+				</tr>
+			</tbody>
+			<tfoot>	
+				<tr style="background-color: #f0f0f0;">
+					<td height="50" style="padding: 0 0 0 30px; color: #858383;">Интернет магазин «ButterflyUA»</td>
+					<td align="center"><a href="tel:0­ 937 777 777" value="+380937777777" target="_blank" style="color: #858383;">+3 8093 777 77 77</a><br><a href="tel:0­ 937 777 777" value="+380937777777" target="_blank" style="color: #858383;">+3 8093 777 77 77</a></td>
+					<td align="right" style="padding: 0 30px 0 0"><a href="#" style="color:#858383; line-height: 15px;" target="_blank">подписаться на новости</a></td>
+				</tr>
+				<tr>
+					<td colspan="3"style="text-align:right; padding: 20px 0 0 0;">
+						<span style="padding: 0 10px; -webkit-text-size-adjust:none;"><a href="#" style="color:#888888; line-height: 15px;" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></span>
+						<span style="padding: 0 20px 0 10px; -webkit-text-size-adjust:none;"><a href="#" style="color:#888888; line-height: 15px;" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a></span>
+						<span style="-webkit-text-size-adjust:none;"><a href="#" style="color:#888888; line-height: 15px;" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></span></td>
+				</tr>
+			</tfoot>										
+		</table>
+	</body>
+</html>
