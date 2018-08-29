@@ -12,14 +12,14 @@ div p:not(:first-child){
   background-color: var(--color_1);
 } /*div p+p*/
 
-p[class]~h2{
+p[class="active"]~h2{
     background-color: var(--color_2);
 }
 
 div h2:nth-child(3n){
   background-color: var(--color_3);
-}
+} /*Why it's wrong? Please, argue to me, because I don't understand. Thanks */
 
-h2{
+body h2{
   background-color: var(--color_4);
 }
