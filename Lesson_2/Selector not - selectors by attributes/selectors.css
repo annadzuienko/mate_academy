@@ -21,9 +21,9 @@ p:not([class]){
 /*a, p, h2*/*[data-href]{
   background-color: var(--color_4);
 }
-a:first-child{
+*a:first-child{
   background-color: var(--color_5);
 }
-[data-href*~="highlight_me"]{
+*[data-href~="highlight_me"]{
   text-decoration: underline;
 }
