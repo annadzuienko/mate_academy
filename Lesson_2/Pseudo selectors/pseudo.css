@@ -9,16 +9,18 @@
 --color_8: #887575;
 }
 
-a:link[class*="www"]{
+a:link[class*="www"],
+a:visited[class*="www"]{
   color: var(--color_6);
 }
+a:active,
 a:not([class="www"]){
   color: var(--color_7);
 }
 a:hover{
   background-color: var(--color_1);
 }
-label:checked{
+input[type=checkbox]:checked{
   text-decoration: underline;
 }
 input:focus{
