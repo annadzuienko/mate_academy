@@ -2,8 +2,10 @@ body{
     margin: 0;
     padding: 0;
 	font-size: 16px;
+    font-weight: bold;
 	color: #303030;
 	line-height: 1;
+    font-family: 'Gabriela', serif;
 }
 .body__arrow{
     position: fixed;
@@ -34,7 +36,6 @@ body{
 }
 .link{
 	color: #303030;
-    font-weight: bold;
 }
 .header__menu{
 	float: right;
@@ -45,7 +46,6 @@ body{
 }
 .menu__item{
     display: inline-block;
-    font-weight: bold;
 }
 .item__link{
     display: block;
@@ -68,6 +68,9 @@ body{
 }
 .menu__item:hover .submenu{
     display: block;
+}
+.item__link:visited{
+background: #000;
 }
 .submenu{
     display: none;
@@ -116,6 +119,7 @@ body{
     width: 175px;
     background: #ff4611;
     color: #fff;
+    font-size: 20px;
 }
 .body__info{
 font-size: 14px;
@@ -147,7 +151,7 @@ font-size: 14px;
 }
 .footer__developer{
     display: inline-block;
-    margin: 30px 0 30px 450px;
+    margin: 0 0 0 400px;
     color: #fff;
     font-style: italic;
 }
