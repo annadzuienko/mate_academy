@@ -40,142 +40,106 @@
 @media screen and (min-width: 1800px){
     .block__first div{
         width: 24%;
-        height: 50px;
     }
     .block__second div{
         width: 49%;
-        height: 50px;
     }
     .block__third div{
         width: 24%;
-        height: 50px;
     }
     .block__forth div{
         width: 24%;
-        height: 50px;
     }
     .block__forth div:last-child{
         width: 49%;
-        height: 50px;
     }
     .block__fifth div{
         width: 19%;
-        height: 50px;       
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1799px){
     .block__first div{
         width: 49%;
-        height: 50px;
     }
     .block__third div{
         width: 49%;
-        height: 50px;
     }
     .block__third div:last-child{
         width: 100%;
-        height: 50px;
     }
     .block__forth div{
         width: 34%;
-        height: 50px;
     }
     .block__forth div:nth-child(2){
         width: 29%;
-        height: 50px;
     }
     .block__forth div:last-child{
         width: 34%;
-        height: 50px;
     }
     .block__fifth div{
         width: 33%;
-        height: 50px;     
+    }
+    .block__fifth div:nth-child(4){
+        margin: 0 0 0 17%;
     }
 }
 @media screen and (min-width: 960px) and (max-width: 1199px){
     .block__first div{
         width: 49%;
-        height: 50px;
     }
-    .block__third div:last-child{
-        width: 100%;
-        height: 50px;
-        background-color: red;
-        margin: auto;
-        display: inline-block;
+    .block__third{
+        width: 30%;
     }
     .block__forth div{
         width: 34%;
-        height: 50px;
     }
     .block__forth div:nth-child(2){
-        width: 29%;
-        height: 50px;
+        width: 29%ж
     }
     .block__forth div:last-child{
-        width: 34%;
-        height: 50px;
+        width: 34%ж
     }
     .block__fifth div{
         width: 49%;
-        height: 50px;    
     }
     .block__fifth div:last-child{
-        width: 100%;
-        height: 50px;     
+        width: 100%;    
     }
 }
 @media screen and (min-width: 768px) and (max-width: 959px){
     .block__first div{
         width: 49%;
-        height: 50px;
     }
     .block__third div:last-child{
         width: 100%;
-        height: 50px;
     }
     .block__forth div{
         width: 49%;
-        height: 50px;
     }
     .block__forth div:last-child{
         width: 100%;
-        height: 50px;
     }
     .block__fifth div{
-        width: 49%;
-        height: 50px;    
+        width: 49%;  
     }
     .block__fifth div:last-child{
-        width: 100%;
-        height: 50px;     
+        width: 100%;   
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
     .block__first div{
         width: 49%;
-        height: 50px;
     }
     .block__third div{
         width: 100%;
-        height: 50px;
     }
     .block__forth div{
         width: 100%;
-        height: 50px;
     }
     .block__forth div:last-child{
         width: 100%;
-        height: 50px;
     }
     .block__fifth div{
-        width: 100%;
-        height: 50px;     
+        width: 100%;    
     }
-
 }
-
-
-
-
