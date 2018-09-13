@@ -47,6 +47,13 @@ body{
 .menu__item{
     display: inline-block;
 }
+.menu__item:hover{
+    background: #000;
+    color: #fff;
+}
+.menu__item:hover a {
+    color: #fff;
+}
 .item__link{
     display: block;
     width: 100px;
@@ -68,9 +75,7 @@ body{
 }
 .menu__item:hover .submenu{
     display: block;
-}
-.item__link:visited{
-background: #000;
+    background: #000;
 }
 .submenu{
     display: none;
@@ -78,9 +83,6 @@ background: #000;
     list-style-type: decimal;
     background: #000;
     color: #fff;
-}
-.submenu__item{
-
 }
 .subitem__link{
     display: block;
