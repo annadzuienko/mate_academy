@@ -90,6 +90,9 @@
     .block__third{
         width: 30%;
     }
+    .block__third:last-child{
+        width: 100%;
+    }
     .block__forth div{
         width: 34%;
     }
