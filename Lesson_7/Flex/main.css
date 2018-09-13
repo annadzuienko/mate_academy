@@ -12,7 +12,7 @@ body{
 .header div:last-child{
 	border: 1px solid #000;
 	height: 100px;
-	width: 300px;
+	width: 91%;
 	background: #f40f0e;
 }
 .main div:first-child{
@@ -25,21 +25,21 @@ body{
 .main div:last-child{
 	border: 1px solid #000;
 	height: 450px;
-	width: 100px;
+	width: 30%;
 	background: #333333;
 	color: #fff;
 }
 .main div:nth-child(2){
 	border: 1px solid #000;
 	height: 300px;
-	width: 198px;
+	width: 61%;
 }
 .footer div{
 	border: 1px solid #000;
     height: 149px;
-    width: 300px;
+    width: 69.4%;
     margin-top: -151px;
-    margin-left: -102px;
+    margin-left: -371px;
 }
 .yellow{
 	background: #f0be2d;
