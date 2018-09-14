@@ -24,7 +24,6 @@ body{
 }
 .header__logo{
     float: left;
-    background: url('images/logo.png'); 
 	margin: 5px 0;
 }
 .logo{
