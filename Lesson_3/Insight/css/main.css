@@ -159,6 +159,9 @@ font-size: 14px;
 
 @media screen and (max-width: 460px){
 
+.body__arrow{
+    display: none;
+}
 .container {
     max-width: 100%;
 }
@@ -171,11 +174,20 @@ font-size: 14px;
 .menu__item:hover .submenu{
     left: 0;
 }
+.menu__item:hover{
+    background: #000;
+    color: #fff;
+    width: 100px;
+}
+.menu__item:hover a {
+    color: #fff;
+}
 .subitem__link {
-    width: 375px;
+    width: 420px;
 }
 .body {
     margin: 0 0 50px 0;
+    padding: 50px 0 0 0;
 }
 .body__title {
     margin: 50px auto;
@@ -200,11 +212,13 @@ font-size: 14px;
 }
 .footer__company {
     float: left;
-    margin: 15px auto;
+    margin: 15px 0 0 5px;
 }
 .footer__developer {
-    margin: 40px auto;
+    margin: 10px 5px;
+    float: right;
 }
 .item__link:hover{
     width: 100%;
 }
+
