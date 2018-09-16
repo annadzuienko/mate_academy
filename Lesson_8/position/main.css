@@ -1,0 +1,97 @@
+body{
+background: #323232;
+}
+.container{
+	margin:0;
+	padding: 0; 
+}
+.error{
+    font-size: 68px;
+    font-weight: bold;
+    padding: 100px 0 0 0;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+.block{
+	border: 25px solid #dddddd;
+    border-radius: 25px;
+    background: #fff;
+    position: relative;
+    height: 200px;
+    padding: 25px;
+    margin: 0 125px; 
+    transform: rotate(-5deg);
+}
+.block p{
+	width: 75%;
+}
+.exclamation{
+    margin: -160px 0 0 725px;
+}
+.cross{
+	display: block;
+    margin: -245px 0 0 905px;
+}
+.exclamation img{
+	width: 80%;
+	height: auto;
+}
+.cross img{
+	width: 5%;
+	height: auto;
+	position: absolute;
+}
+.position{
+    width: 65px;
+    height: 20px;
+    background: #313c3d;
+    text-align: center;
+    padding: 25px;
+    color: #5bcfec;
+    position: absolute;
+}
+.shadow{
+    margin: -350px 0 0 0;
+}
+.title{
+    margin: -200px 0;
+}
+.close{
+    margin: -365px 0 0 1129px;
+}
+.label{
+    margin: -10px 0 0 900px;
+}
+.size{
+    margin: -50px 0 0 0;
+}
+.line{
+    border-top: 1px dashed #5bcfec;
+    width: 50px;
+    position: absolute;
+}
+.line-shadow{
+    margin: -161px 0 0 115px;
+}
+.line-close{
+    margin: -330px 0 0 1114px;
+    width: 15px;
+}
+.line-label{
+    border-right: 1px dashed #5bcfec;
+    margin: -100px 0 0 905px;
+    height: 90px;
+    border-top: none;
+}
+.line-size{
+    border-right: none;
+    border-bottom: 1px dashed #5bcfec;
+    border-left: 1px dashed #5bcfec;
+    height: 68px;
+    margin: -50px 0 0 125px;
+}
+
+
+
+
+
