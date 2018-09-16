@@ -1,0 +1,50 @@
+.background{
+	display: flex;
+}
+.tab{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #e7e7e7;
+    background: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+.fab{
+    padding-right: 10px;
+}
+.description{
+	display: none;
+	position: absolute;
+	margin-top: 51px;
+	width: 1000px;
+	border: 1px solid #e7e7e7;
+	height: 200px;
+}
+.description p{
+	margin: 15px; 
+}
+.tab:hover{
+	border-top: 2px solid #8bbea8;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+.tab-wordpress:hover~.wordpress{
+	display: block;
+}
+.tab-windows:hover~.windows{
+	display: block;
+}
+.tab-html:hover~.html{
+	display: block;
+}
+.tab-css:hover~.css{
+	display: block;
+}
+
+
+
+
