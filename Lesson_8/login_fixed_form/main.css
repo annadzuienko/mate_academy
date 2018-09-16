@@ -1,0 +1,62 @@
+body {
+	background: url(../imgs/mountains.jpg) no-repeat;
+}
+.container{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	height: 860px;
+	background-color: rgba(122, 125, 165, 0.5);
+}
+.fa-check{
+	color: #d0d1d4;
+    font-size: 300px;
+    margin: 80px 100px 100px 100px;
+}
+.fa-user{
+    color: #d0d1d4;
+    font-size: 24px;
+    padding: 20px 0 0 35px;
+    position: absolute;
+}
+.fa-lock{
+    color: #d0d1d4;
+    font-size: 24px;
+    padding: 20px 0 0 35px;
+    position: absolute;
+}
+input{
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #e5e3e5;
+    width: 79%;
+    height: 70px;
+    color: #757575;
+    padding-left: 50px;
+    margin: 0 30px;
+    padding-bottom: 0px;
+    background: none;
+}
+button{
+    margin: 70px 38px 50px 38px;
+    width: 85%;
+    height: 50px;
+    border-radius: 25px;
+    background: #ff3366;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+.container div{
+    text-align: center;
+    color: #757575;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
