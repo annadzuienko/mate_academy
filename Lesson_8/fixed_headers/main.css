@@ -1,0 +1,61 @@
+body{
+	font-size: 21px;
+}
+.conteiner{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+.conteiner__grey{
+	background-color: #c3c1c3;
+	color: #605e60;
+	height: 100px;
+	width: 30%;
+	border: 1px solid #c3c1c3;
+}
+img{
+	width: 5%;
+	height: auto;
+}
+.conteiner__grey span{
+	float: left;
+	padding: 30px 0 0 15px;
+}
+.conteiner__grey div{
+	float: right;
+	display: block;
+	width: 54px;
+	height: 50px;
+	background: url(../imgs/cross.png) no-repeat cover;
+	padding: 15px 15px 0 0;
+}
+main{
+	border: 1px solid #c3c1c3;
+	width: 30%;
+	height: 300px;
+	overflow: scroll;
+}
+form{
+	margin: 15px;
+}
+.form{
+	font-size: 14px;
+	border: none;
+	border-bottom: 1px solid #e5e3e5;
+	width: 100%;
+	height: 50px;
+	color: #757575;
+}
+.button{
+	width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #277cc8;
+    color: #fff;
+    margin: 80px 0 0 0;
+    text-transform: uppercase;
+}
+
+
+
+
