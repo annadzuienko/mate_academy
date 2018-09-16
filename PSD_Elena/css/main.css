@@ -30,6 +30,7 @@ button{
 	border: none;
 	display: block;
 	margin: 0 auto;
+	color: #fff;
 }
 header{
 	background: url(../images/bg.png) no-repeat center / cover;
