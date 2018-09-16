@@ -1,0 +1,43 @@
+body{
+background: #323232;
+}
+.container{
+	margin:0;
+	padding: 0; 
+}
+.error{
+    font-size: 68px;
+    font-weight: bold;
+    padding: 100px 0 0 0;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+.block{
+	border: 25px solid #dddddd;
+    border-radius: 25px;
+    background: #fff;
+    position: relative;
+    height: 200px;
+    padding: 25px;
+    margin: 0 50px; 
+    transform: rotate(-5deg);
+}
+.block p{
+	width: 75%;
+}
+.exclamation{
+    margin: -160px 0 0 830px;
+}
+.cross{
+	display: block;
+    margin: -278px 0 0 1050px;
+}
+.exclamation img{
+	width: 80%;
+	height: auto;
+}
+.cross img{
+	width: 5%;
+	height: auto;
+	position: absolute;
+}
