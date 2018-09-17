@@ -117,7 +117,7 @@ header p{
 	text-align: left;
 }
 .services__item p{
-	text-align: right;
+	text-align: left;
 }
 .bg__grey{
 	background: #eeeeef;
@@ -141,7 +141,7 @@ header p{
 	margin-left: 0;
 }
 .supported p{
-	text-align: right;
+	text-align: left;
 	font-size: 14px;
 }
 .advanced{
@@ -155,7 +155,7 @@ header p{
 	color: #000;
 }
 .advanced p{
-	text-align: right;
+	text-align: left;
 	margin-bottom: 30px;
 }
 .advanced a{
@@ -177,7 +177,7 @@ header p{
 	font-size: 14px;
 }
 .user p{
-	text-align: right;
+	text-align: left;
 	margin-left: 10px;
 }
 .article__block{
@@ -188,7 +188,7 @@ header p{
 	margin: auto;
 }
 .article__block p{
-	text-align: right;
+	text-align: left;
 	margin-bottom: 35px;
 }
 .bg__menthol{
@@ -217,7 +217,7 @@ header p{
 	padding-left: 23%;
 }
 .footer__dev{
-	margin: 20px 0 20px 30%; 
+	margin: 20px 0 20px 20%; 
 	float: left;
 }
 .footer__socials{
