@@ -40,7 +40,7 @@ body{
 	background: #333333;
 }
 .flex div:last-child{
-	width: calc(65% + 35px);
+	width: calc(100px + (65% - 65px));
 	height: 150px;
 	margin-top: -150px;
 }
