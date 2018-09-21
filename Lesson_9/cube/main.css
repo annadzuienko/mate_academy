@@ -1,0 +1,31 @@
+body{
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 500px;
+  height: 500px;
+  background-color: #141414;
+  margin: 100px auto; 
+  position: relative;
+}
+.cube{
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  position: absolute;
+  animation: orbit 4s linear infinite;
+}
+@keyframes orbit {
+  from{
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
