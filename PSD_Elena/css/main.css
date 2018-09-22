@@ -22,6 +22,7 @@ a{
 }
 p{
 	line-height: 1.5;
+	text-align: left;
 }
 button{
 	height: 35px;
@@ -44,12 +45,18 @@ header{
 	display: block;
 }
 .header__menu{
-	margin: 0 37%;
-	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+}
+.header__menu div{
+	display: inline-block;
 }
 .header__menu a{
 	margin: 0 16px;
 	text-transform: uppercase;
+}
+.menu__list{
+
 }
 h1{
 	font-size: 38px;
@@ -86,7 +93,7 @@ header p{
 	width: 10%;
     margin: 0 70px;
 }
-.menu__item h4, p{
+.menu__item h4, .menu__item p{
 	text-align: center;
 }
 .line__grey{
@@ -116,9 +123,6 @@ header p{
 .services__item h3{
 	text-align: left;
 }
-.services__item p{
-	text-align: left;
-}
 .bg__grey{
 	background: #eeeeef;
 	height: 325px;
@@ -141,7 +145,6 @@ header p{
 	margin-left: 0;
 }
 .supported p{
-	text-align: left;
 	font-size: 14px;
 }
 .advanced{
@@ -155,7 +158,6 @@ header p{
 	color: #000;
 }
 .advanced p{
-	text-align: left;
 	margin-bottom: 30px;
 }
 .advanced a{
@@ -177,18 +179,20 @@ header p{
 	font-size: 14px;
 }
 .user p{
-	text-align: left;
 	margin-left: 10px;
 }
 .article__block{
-	width: 25%;
-	margin: 60px 0;
+	width: 50%;
+	margin: 60px 25px;
+	text-align: right;
+}
+.article__block:last-child{
+	text-align: left;
 }
 .article__block h3{
 	margin: auto;
 }
 .article__block p{
-	text-align: left;
 	margin-bottom: 35px;
 }
 .bg__menthol{
@@ -242,15 +246,27 @@ header p{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 767px){
 	body{
 		font-size: 14px;
 	}
 	header{
 		min-height: 450px;
 	}
+	h1{
+		margin-top: 60px;
+	}
+	header p{
+		margin-bottom: 50px;
+	}
 	h4 {
     	margin-top: 20px;
+	}
+	h3, h4, p{
+		text-align: center;
+	}
+	.menthol{
+		margin: 40px auto 0;
 	}
 	.menu__item img {
     	margin: 40px auto 0;
@@ -258,8 +274,8 @@ header p{
 	.line__grey {
     	margin: 20px 0;
 	}
-	.header__menu{
-		margin: 25px 8%;
+	.header__menu {
+    	margin-top: 10px;
 	}
 	.header__menu a {
     	margin: 0 5px;
@@ -275,43 +291,63 @@ header p{
     	margin: auto;
     }
     .services__item {
-    	margin: 0 30px;
+    	margin: 0 auto;
     	min-width: 80%;
 	}
 	.services__item:last-child {
-    	margin: 0 30px;
+    	margin: 0 auto;
+	}
+	.services__item h3{
+		text-align: center;
+	}
+	.services__item img {
+    	margin: 65px auto 0;
+	}
+	.bg__grey{
+		height: 320px;
 	}
 	.supported {
     	margin: 40px 10px;
     }
     .supported p {
-    	text-align: left;
     	margin-left: 40px;
+    	text-align: left;
     }
     .advanced {
-		margin: 60px 0 0 70px;
+		margin: 60px auto;
 		width: 180px;
+	}
+	.advanced:last-child{
+		margin: 60px auto;
+	}
+	.advanced a {
+    	margin-left: 23%;
 	}
 	.user {
 		width: 260px;
-		margin: 50px 30px 0 30px;
+		margin: 50px auto 0;
+		text-align: center;
+	}
+	.user:last-child {
+    	margin: 50px auto 0;
 	}
 	.bg__grey-last{
     	height: 550px;
+    	margin: 0;
 	}
 	.article__block {
     	width: 100%;
-    	margin: 60px 0 0 30px;
+    	margin: 60px 0 auto;
+    	text-align: center; 
 	}
-	.article__block p {
-    	text-align: left;
-    	margin-left: 30px;
+	.article__block .grey{
+		margin: 0 auto; 
 	}
 	footer{
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 	.container {
-    	margin: 30px 40px;
+    	margin: 30px 12%;
 	}
 	#client{
 		padding-top: 70px;
@@ -326,11 +362,22 @@ header p{
 	    padding-left: 0;
 	}
 	.footer__dev {
-    	margin: 30px 0 30px 45px;
+    	margin: 30px 0;
+    	text-align: center;
     	float: none;
 	}
 	.footer__socials {
     	float: none;
-    	margin: 0 0 0 55px;
+    	text-align: center;
+    	margin: 0;
+	}
+	.socials{
+		padding-left: 0;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1800px){
+	.advanced {
+	    width: 20.5%;
+	}
+
+
