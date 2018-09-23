@@ -18,30 +18,16 @@ body{
   margin: 5% auto; 
   text-align: center;
   color: #60d9f1;
+  visibility: hidden;
   opacity: 0;
   transition: opacity;
   transition-duration: 3s;
   transition-delay: 0.5s; 
-  transition-timing-function: ease;
+  transition-timing-function: linear;
 }
 button:hover ~ .modal{
   opacity: 1;
+  visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
