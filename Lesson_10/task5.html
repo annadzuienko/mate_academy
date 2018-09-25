@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+      svg{
+        margin: 50px;
+      }
+      line{
+        transition: 0.4s;
+      }
+      svg:hover .bar1{
+          -webkit-transform: rotate(-45deg) translate(-35px, 20px);
+          transform: rotate(-45deg) translate(-35px, 20px);
+        }
+      svg:hover .bar2 {opacity: 0;}
+      svg:hover .bar3 {
+        -webkit-transform: rotate(45deg) translate(20px, -35px);
+        transform: rotate(45deg) translate(20px, -35px);
+        }
+    </style>
+    <svg height="100px" width="100px">
+      <line x1="0" y1="25" x2="50" y2="25" stroke-width="5" stroke="#000" class="bar1"></line>
+      <line x1="0" y1="35" x2="50" y2="35" stroke-width="5" stroke="#000" class="bar2"></line>
+      <line x1="0" y1="45" x2="50" y2="45" stroke-width="5" stroke="#000" class="bar3"></line> 
+    </svg>
+  </body>
+</html>
+
+
+
+
+
