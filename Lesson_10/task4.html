@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+      polyline{
+  fill: none;
+  stroke: #fc1e69;
+  stroke-width: 4;
+}
+svg{
+  margin: 50px 150px; 
+}
+@keyframes change-background {
+  0% {
+    background: #c51754;
+  }
+  50% {
+    background: #820f38;
+  }
+  100% {
+    background: #350617;
+  }
+}
+svg:hover {
+  animation: change-background 4s linear infinite alternate;
+}
+
+    </style>
+    <svg height="52" width="300">
+      <polyline points="1,1 1,50 300,50 300,1 1,1"></polyline>
+      <text y="30" x="110" fill="#fc1e69">Continue</text>
+    </svg>
+  </body>
+</html>
+
+
+
+
+
