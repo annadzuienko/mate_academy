@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+     
+    	/*#circle{
+    		stroke-dasharray: 100px 900px;
+    		animation: dash 5s linear;
+    	}
+    	@keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }*/
+    body{
+      background-color: #041a24;
+    }
+    .big__circle{
+      width: 250px;
+      height: 250px;
+      border-radius: 125px;
+      background-color: #073850;
+      margin: 25px; 
+      position: absolute;
+    }
+    .wrap{
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      margin: 25px; 
+    }
+    #small__circle{
+    		/*stroke-dasharray: 100 900;
+    		stroke-dashoffset: 900;*/
+        animation: spin 1s infinite linear;
+    transform-origin: 50% 125px;
+    		/*animation: dash 5s linear;
+        animation-iteration-count: infinite;*/
+    	}
+    	@keyframes spin {
+        to {
+          transform: rotate(1turn);
+
+        }
+
+    </style>
+		<!--<svg style="width: 500px; height: 500px;">
+      <circle cx="250" cy="250" r="125" fill="#073850" stroke-width="1" stroke="#324c55"></circle>
+    </svg>-->
+      <div class="big__circle"></div>
+			<div class="wrap"><svg style="width:250px; height:250px;">
+        <circle id="small__circle" cx="50" cy="50" r="25" fill="#fff" stroke-width="1" stroke="#fff"></circle>
+		</svg></div>	
+  </body>
+</html>
+
+
+
+
+
