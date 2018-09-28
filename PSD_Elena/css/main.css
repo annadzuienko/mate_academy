@@ -149,10 +149,8 @@ header p{
 }
 .advanced{
 	width: 14.5%;
-	margin: 60px 25px 0 0;
-}
-.advanced:last-child{
-	margin-right: 0;
+    margin: 60px 12px 0 12px;
+    text-align: left;
 }
 .advanced h3{
 	color: #000;
@@ -245,6 +243,10 @@ header p{
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.far {
+	font-size: 12px;
+	color: #d2d5da;
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
 	body{
@@ -375,7 +377,4 @@ header p{
 		padding-left: 0;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1800px){
-	.advanced {
-	    width: 20.5%;
-	}
+
