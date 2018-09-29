@@ -1,9 +1,9 @@
 .container {
-  margin: 250px;
+  width: 250px;
   height: 250px;
   position: relative;
   margin: 50px auto;
-  border: $mainBorderColor;
+  border: 1px solid $mainBorderColor;
 
   &__first {
     z-index: 4;
@@ -12,14 +12,17 @@
   &__second {
     z-index: 3;
     @include paperList;
+    top: 2px;
   }
   &__third {
     z-index: 2;
     @include paperList;
+    top: 4px;
   }
   &__third {
     z-index: 1;
     @include paperList;
+    top: 6px;
   }
 }
 
@@ -30,22 +33,24 @@
   bottom: 0;
   top: 0;
   z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   &-wrapper {
     width: 251px;
     height: 241px;
     position: absolute;
-
     left: 50%;
     top: 50%;
-    transform: translate(-50% ,-50%);
+    /*transform: translate(-50% ,-50%);*/
   }
 
   &-item {
-    width: 245px;
+    width: 250px;
     height: 30px;
-    border-bottom: 1px solid $borderColor;
-    border-left: 1px double $verticalLinesColor;
+    border-bottom: 1px solid $mainBorderColor;
+    color: $textColor;
     input[type=checkbox] {
       visibility: hidden;
       opacity: 0;
@@ -63,17 +68,30 @@
       height: 17px;
       display: inline-block;
       border: 1px solid $borderColor;
+      margin: 5px 5px -5px;
     }
 
     &__text {
       @include fontSize(12);
+      margin-left: 10px;
     }
   }
 }
 
-.far {
-  @include $textColor(#999999);
+.taskList-item:first-child {
+  height: 40px;
+}
+
+.taskList-item:last-child {
+  height: 45px;
+}
+
+.far, .fas {
+  color: $textColor;
   @include fontSize(12);
+}
+.fas:hover .popup {
+  visibility: visible;
 }
 .icon {
   display: inline-block;
@@ -89,20 +107,31 @@
   background: #555555;
   text-align: center;
   color: #eeeeee;
+  visibility: hidden;
 }
 button {
   margin: 10px;
+  font-weight: bold;
 }
 
 button:first-child {
   float: left;
   width: 70px;
   height: 25px;
+  border: none;
+  background: none;
+  color: #dadadc;
+  font-size: 10px;
+  margin-left: 45px;
 }
 button:last-child {
   float: right;
   width: 70px;
   height: 25px;
+  color: #687080;
+  border: none;
+  background: #f1f0f0;
+  border-radius: 5px;
 }
 
 

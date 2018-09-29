@@ -1,32 +1,124 @@
+.container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 50px auto;
+  border: 1px solid #cccccc; }
+  .container__first {
+    z-index: 4;
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 1px #a8a6a6; }
+  .container__second {
+    z-index: 3;
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 1px #a8a6a6;
+    top: 2px; }
+  .container__third {
+    z-index: 2;
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 1px #a8a6a6;
+    top: 4px; }
+  .container__third {
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 1px #a8a6a6;
+    top: 6px; }
+
 .taskList {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
   .taskList-wrapper {
     width: 251px;
     height: 241px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
-  .taskList-item input[type=checkbox] {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    width: 0; }
-    .taskList-item input[type=checkbox]:checked + .taskList-item__checkbox {
-      border-color: #cccccc;
-      background: #cccccc; }
-  .taskList-item__checkbox {
-    width: 17px;
-    height: 17px;
-    display: inline-block;
-    border: 1px solid #66cccc; }
-  .taskList-item__text {
-    font-size: 0.75rem; }
+    /*transform: translate(-50% ,-50%);*/ }
+  .taskList-item {
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid #cccccc;
+    color: #999999; }
+    .taskList-item input[type=checkbox] {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      width: 0; }
+      .taskList-item input[type=checkbox]:checked + .taskList-item__checkbox {
+        border-color: #cccccc;
+        background: #cccccc; }
+    .taskList-item__checkbox {
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      border: 1px solid #66cccc;
+      margin: 5px 5px -5px; }
+    .taskList-item__text {
+      font-size: 0.75rem;
+      margin-left: 10px; }
+
+.taskList-item:first-child {
+  height: 40px; }
+
+.taskList-item:last-child {
+  height: 45px; }
+
+.far, .fas {
+  color: #999999;
+  font-size: 0.75rem; }
+
+.fas:hover .popup {
+  visibility: visible; }
+
+.icon {
+  display: inline-block;
+  margin: 10px; }
+
+.icon:last-child {
+  margin-left: 100px; }
+
+.popup {
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  background: #555555;
+  text-align: center;
+  color: #eeeeee;
+  visibility: hidden; }
+
+button {
+  margin: 10px;
+  font-weight: bold; }
+
+button:first-child {
+  float: left;
+  width: 70px;
+  height: 25px;
+  border: none;
+  background: none;
+  color: #dadadc;
+  font-size: 10px;
+  margin-left: 45px; }
+
+button:last-child {
+  float: right;
+  width: 70px;
+  height: 25px;
+  color: #687080;
+  border: none;
+  background: #f1f0f0;
+  border-radius: 5px; }
 
 h1 {
   color: #ffcc1 + 1;
