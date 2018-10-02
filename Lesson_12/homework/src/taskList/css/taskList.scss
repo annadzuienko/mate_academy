@@ -1,0 +1,77 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+
+@mixin font-smoothing() {
+    // Font antialising on Mac OS X
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.messenger-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: block;
+        margin: 10px 0.25em;
+    }
+
+    span {
+        margin: 10px;
+        font-weight: bold;
+    }
+  .blackText{
+    color: #000;
+  }
+    a {
+        display: block;
+        width: 20em;
+        height: 3em;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px rgba(74, 97, 79, 0.2);
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        padding: 20px;
+
+        &:before {
+            font: 1.5em/1.75 "FontAwesome";
+            @include font-smoothing();
+        }
+
+        $icons: (
+            check:                (char: "\f00c", color: #70b771),
+            info-circle:          (char: "\f05a", color: #55abc7),
+            exclamation-triangle: (char: "\f071", color: #faa922),
+            shield:               (char: "\f132", color: #cb5f55),
+            custom:               (color: #fff)
+        );
+
+        @each $messenger, $icon in $icons {
+            &[href*="#{$messenger}"] {
+                background-color: map-get($icon, color);
+
+                &:before {
+                    content: map-get($icon, char);
+                }
+            }
+        }
+    }
+}
+
+.stair {
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  width: 25px;
+  height: 15px;
+}
+
+@for $i from 1 through 10 {
+   .stair-#{$i} {
+      margin-left: 25px * $i;
+   }
+}
+
+
+
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+.messenger-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .messenger-icons li {
+    display: block;
+    margin: 10px 0.25em; }
+  .messenger-icons span {
+    margin: 10px;
+    font-weight: bold; }
+  .messenger-icons .blackText {
+    color: #000; }
+  .messenger-icons a {
+    display: block;
+    width: 20em;
+    height: 3em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(74, 97, 79, 0.2);
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    padding: 20px; }
+    .messenger-icons a:before {
+      font: 1.5em/1.75 "FontAwesome";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .messenger-icons a[href*="check"] {
+      background-color: #70b771; }
+      .messenger-icons a[href*="check"]:before {
+        content: ""; }
+    .messenger-icons a[href*="info-circle"] {
+      background-color: #55abc7; }
+      .messenger-icons a[href*="info-circle"]:before {
+        content: ""; }
+    .messenger-icons a[href*="exclamation-triangle"] {
+      background-color: #faa922; }
+      .messenger-icons a[href*="exclamation-triangle"]:before {
+        content: ""; }
+    .messenger-icons a[href*="shield"] {
+      background-color: #cb5f55; }
+      .messenger-icons a[href*="shield"]:before {
+        content: ""; }
+    .messenger-icons a[href*="custom"] {
+      background-color: #fff; }
+
+.stair {
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  width: 25px;
+  height: 15px; }
+
+.stair-1 {
+  margin-left: 25px; }
+
+.stair-2 {
+  margin-left: 50px; }
+
+.stair-3 {
+  margin-left: 75px; }
+
+.stair-4 {
+  margin-left: 100px; }
+
+.stair-5 {
+  margin-left: 125px; }
+
+.stair-6 {
+  margin-left: 150px; }
+
+.stair-7 {
+  margin-left: 175px; }
+
+.stair-8 {
+  margin-left: 200px; }
+
+.stair-9 {
+  margin-left: 225px; }
+
+.stair-10 {
+  margin-left: 250px; }
+
+h1 {
+  color: #ffcc1 + 1;
+  font-size: 23px; }
+
+h2 {
+  color: #ffcc1 + 2;
+  font-size: 22px; }
+
+h3 {
+  color: #ffcc1 + 3;
+  font-size: 21px; }
+
+h4 {
+  color: #ffcc1 + 4;
+  font-size: 20px; }
+
+h5 {
+  color: #ffcc1 + 5;
+  font-size: 19px; }
+
+h6 {
+  color: #ffcc1 + 6;
+  font-size: 18px; }

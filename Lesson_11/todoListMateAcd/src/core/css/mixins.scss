@@ -19,6 +19,8 @@ $baseSize: 16;
 
 @mixin paperList {
 	position: absolute;
-	background: #fff;
+	background: none;
 	box-shadow: 1px 1px #a8a6a6;
+  width: 250px;
+  border-bottom: 1px solid $mainBorderColor;
 }
