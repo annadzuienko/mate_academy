@@ -1,7 +1,7 @@
 {
   "name": "sasstasks",
   "version": "1.0.0",
-  "description": "Todoist project for Mate Academy",
+  "description": "Sass-tasks for Mate Academy",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
