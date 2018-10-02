@@ -18,19 +18,28 @@ a {
     z-index: 3;
     @include paperList;
     top: 2px;
+<<<<<<< HEAD
     height: 251px;
+=======
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
   &__third {
     z-index: 2;
     @include paperList;
     top: 4px;
+<<<<<<< HEAD
     height: 252px;
+=======
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
   &__forth {
     z-index: 1;
     @include paperList;
     top: 6px;
+<<<<<<< HEAD
     height: 253px;
+=======
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
 }
 
@@ -49,14 +58,24 @@ a {
     width: 251px;
     height: 241px;
     position: absolute;
+<<<<<<< HEAD
     /*left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);*/
+=======
+    left: 50%;
+    top: 50%;
+    /*transform: translate(-50% ,-50%);*/
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
 
   &-item {
     width: 250px;
+<<<<<<< HEAD
     height: 32px;
+=======
+    height: 30px;
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
     border-bottom: 1px solid $mainBorderColor;
     color: $textColor;
     input[type=checkbox] {
@@ -94,8 +113,17 @@ a {
   height: 45px;
 }
 
+<<<<<<< HEAD
 div a .fa-trash-alt:hover .popup {
   display: block;
+=======
+.far, .fas {
+  color: $textColor;
+  @include fontSize(12);
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
+}
+.fas:hover .popup {
+  visibility: visible;
 }
 .icon {
   display: inline-block;
@@ -107,6 +135,7 @@ div a .fa-trash-alt:hover .popup {
   margin-left: 100px;
 }
 .popup {
+<<<<<<< HEAD
     position: absolute;
     width: 55px;
     height: 15px;
@@ -157,6 +186,39 @@ display: inline-block;
     margin: 10px 0 12px 32px;
     background: #f1f0f0;
     border-radius: 5px;
+=======
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  background: #555555;
+  text-align: center;
+  color: #eeeeee;
+  visibility: hidden;
+}
+button {
+  margin: 10px;
+  font-weight: bold;
+}
+
+button:first-child {
+  float: left;
+  width: 70px;
+  height: 25px;
+  border: none;
+  background: none;
+  color: #dadadc;
+  font-size: 10px;
+  margin-left: 45px;
+}
+button:last-child {
+  float: right;
+  width: 70px;
+  height: 25px;
+  color: #687080;
+  border: none;
+  background: #f1f0f0;
+  border-radius: 5px;
+>>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
 }
 
 
