@@ -1,5 +1,63 @@
 @charset "UTF-8";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+button:first-child {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  button:first-child:focus {
+    color: #ffcccc; }
+  button:first-child:active {
+    color: #2a602d; }
+  button:first-child:hover {
+    color: #334432; }
+
+.tasks__item {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: #ffcccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #333; }
+  .tasks__item-text {
+    display: block;
+    margin: 10px 0;
+    text-align: center; }
+
+.rules__item {
+  font-size: 12px;
+  color: #9c5c83; }
+
+.item-1 {
+  font-size: 12px;
+  color: #432839; }
+
+.item-2 {
+  font-size: 24px;
+  color: #865072; }
+
+.item-3 {
+  font-size: 36px;
+  color: #c978ab; }
+
+.item-4 {
+  font-size: 48px;
+  color: #ffa0e4; }
+
+.item-5 {
+  font-size: 60px;
+  color: #ffc8ff; }
+
+.item-6 {
+  font-size: 72px;
+  color: #fff0ff; }
+
 .messenger-icons {
   list-style: none;
   margin: 0;
@@ -11,7 +69,8 @@
     margin: 10px;
     font-weight: bold; }
   .messenger-icons .blackText {
-    color: #000; }
+    color: #000;
+    margin-left: 0; }
   .messenger-icons a {
     display: block;
     width: 20em;
@@ -81,26 +140,245 @@
 .stair-10 {
   margin-left: 250px; }
 
-h1 {
+.container__item {
+  display: inline-block;
+  width: 33%;
+  height: 30px;
+  margin: 0;
+  color: #ffcccc;
+  font-size: 14px;
+  font-family: "Helvetica";
+  box-shadow: 1px 1px 1px 1px rgba(134, 108, 108, 0.5); }
+  .container__item-text {
+    margin: 7px;
+    display: block; }
+
+.colorful {
+  width: 50%;
+  height: 50px;
+  list-style: none; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n) {
+  background: blue; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(2n-1) {
+  background: yellow; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(5n) {
+  background: black; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.colorful:nth-child(8n) {
+  background: green; }
+
+.button {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666; }
+  .button-success {
+    background-color: #52bf4a;
+    color: #fff; }
+  .button-warning {
+    background-color: #c23435;
+    color: #fff; }
+  .button-info {
+    background-color: #757989;
+    color: #000; }
+  .button-default {
+    background-color: #2478ed;
+    color: #fff; }
+  .button-error {
+    background-color: #800000;
+    color: #666; }
+
+1 {
   color: #ffcc1 + 1;
   font-size: 23px; }
 
-h2 {
+2 {
   color: #ffcc1 + 2;
   font-size: 22px; }
 
-h3 {
+3 {
   color: #ffcc1 + 3;
   font-size: 21px; }
 
-h4 {
+4 {
   color: #ffcc1 + 4;
   font-size: 20px; }
 
-h5 {
+5 {
   color: #ffcc1 + 5;
   font-size: 19px; }
 
-h6 {
+6 {
   color: #ffcc1 + 6;
   font-size: 18px; }

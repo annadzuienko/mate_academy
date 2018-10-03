@@ -1,9 +1,46 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
 
+button:first-child {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+    &:focus {
+      color: $backColor;
+    }
+    &:active {
+      color: $buttonBackColor;
+    }
+    &:hover{
+      color: $buttonBackActiveColor;
+    }
+}
+  
+.tasks__item {
+    @include taskList;
+
+    &-text {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
 @mixin font-smoothing() {
     // Font antialising on Mac OS X
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.rules__item {
+  @include rulesItem;
+}
+
+@for $i from 1 through 6 {
+   .item-#{$i} {
+      font-size: 12px * $i;
+      color: #432839 * $i;
+   }
 }
 
 .messenger-icons {
@@ -22,6 +59,7 @@
     }
   .blackText{
     color: #000;
+    margin-left: 0;
   }
     a {
         display: block;
@@ -72,6 +110,69 @@
    }
 }
 
+.container__item{
+    @include containerItem;
 
+    &-text{
+        margin: 7px;
+        display: block;
+    }
+}
+
+
+.colorful {
+  width: 50%;
+  height: 50px;
+  list-style: none;
+}
+
+@for $i from 1 through 15 {
+  .colorful:nth-child(2n) {
+    background: blue;
+  }
+}
+
+@for $i from 1 through 15 {
+  .colorful:nth-child(2n-1) {
+    background: yellow;
+  }
+}
+
+@for $i from 1 through 15 {
+  .colorful:nth-child(5n) {
+    background: black;
+  }
+}
+
+@for $i from 1 through 15 {
+  .colorful:nth-child(8n) {
+    background: green;
+  }
+}
+
+$buttons: (
+ success: (#52bf4a, #fff),
+  warning: (#c23435, #fff),
+  info: (#757989, #000),
+  default: (#2478ed, #fff),
+  error: (#800000, #666),
+);
+ 
+.button {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666;
+   
+  @each $name, $colors in $buttons {
+    $bgcolor: nth($colors, 1);
+    $fontcolor: nth($colors, 2);
+     
+    &-#{$name} {
+      background-color: $bgcolor;
+      color: $fontcolor;
+    }
+  }
+}
 
 
