@@ -52,17 +52,29 @@ a {
   z-index: 1;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Helvetica", sans-serif; }
   .taskList-wrapper {
     width: 251px;
     height: 241px;
     position: absolute;
-    /*left: 50%;
+    left: 50%;
     top: 50%;
-    transform: translate(-50% ,-50%);*/ }
+    transform: translate(-50%, -50%); }
+    .taskList-wrapper:before {
+      position: absolute;
+      content: "";
+      height: 104%;
+      width: 3px;
+      background: transparent;
+      left: 40px;
+      top: -4px;
+      border-right: 1px solid #ffcccc;
+      border-left: 1px solid #ffcccc; }
   .taskList-item {
     width: 250px;
     height: 32px;
+    height: 30px;
     border-bottom: 1px solid #cccccc;
     color: #999999; }
     .taskList-item input[type=checkbox] {
@@ -72,7 +84,14 @@ a {
       width: 0; }
       .taskList-item input[type=checkbox]:checked + .taskList-item__checkbox {
         border-color: #cccccc;
-        background: #cccccc; }
+        position: relative; }
+        .taskList-item input[type=checkbox]:checked + .taskList-item__checkbox:before {
+          content: "\2713";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          line-height: 1; }
     .taskList-item__checkbox {
       width: 17px;
       height: 17px;
@@ -87,10 +106,11 @@ a {
   height: 40px; }
 
 .taskList-item:last-child {
-  height: 45px; }
+  height: 50px; }
 
-div a .fa-trash-alt:hover .popup {
-  display: block; }
+.far, .fas {
+  color: #999999;
+  font-size: 0.75rem; }
 
 .icon {
   display: inline-block;
@@ -123,6 +143,13 @@ button {
 
 button:first-child {
   margin: 4px 0px; }
+
+button:last-child {
+  float: right;
+  width: 70px;
+  height: 25px;
+  color: #687080;
+  margin: 0 15px; }
 
 .fa-chevron-circle-left {
   color: #d7d8da;

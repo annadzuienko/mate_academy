@@ -18,28 +18,19 @@ a {
     z-index: 3;
     @include paperList;
     top: 2px;
-<<<<<<< HEAD
     height: 251px;
-=======
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
   &__third {
     z-index: 2;
     @include paperList;
     top: 4px;
-<<<<<<< HEAD
     height: 252px;
-=======
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
   &__forth {
     z-index: 1;
     @include paperList;
     top: 6px;
-<<<<<<< HEAD
     height: 253px;
-=======
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
   }
 }
 
@@ -53,29 +44,32 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: $fontFamily;
 
   &-wrapper {
     width: 251px;
     height: 241px;
     position: absolute;
-<<<<<<< HEAD
-    /*left: 50%;
-    top: 50%;
-    transform: translate(-50% ,-50%);*/
-=======
     left: 50%;
     top: 50%;
-    /*transform: translate(-50% ,-50%);*/
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
+    transform: translate(-50% ,-50%);
+    &:before {
+      position: absolute;
+      content: "";
+      height: 104%;
+      width: 3px;
+      background: transparent;
+      left: 40px;
+      top: -4px;
+      border-right: 1px solid $verticalLinesColor;
+      border-left: 1px solid $verticalLinesColor;
+    }
   }
 
   &-item {
     width: 250px;
-<<<<<<< HEAD
     height: 32px;
-=======
     height: 30px;
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
     border-bottom: 1px solid $mainBorderColor;
     color: $textColor;
     input[type=checkbox] {
@@ -86,7 +80,15 @@ a {
 
       &:checked + .taskList-item__checkbox {
         border-color: $mainBorderColor;
-        background: $mainBorderColor;
+        position: relative;
+        &:before {
+          content: "\2713";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          line-height: 1;
+        }
       }
     }
 
@@ -110,21 +112,14 @@ a {
 }
 
 .taskList-item:last-child {
-  height: 45px;
+  height: 50px;
 }
 
-<<<<<<< HEAD
-div a .fa-trash-alt:hover .popup {
-  display: block;
-=======
 .far, .fas {
   color: $textColor;
   @include fontSize(12);
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
 }
-.fas:hover .popup {
-  visibility: visible;
-}
+
 .icon {
   display: inline-block;
   width: 16px;
@@ -135,7 +130,6 @@ div a .fa-trash-alt:hover .popup {
   margin-left: 100px;
 }
 .popup {
-<<<<<<< HEAD
     position: absolute;
     width: 55px;
     height: 15px;
@@ -147,6 +141,7 @@ div a .fa-trash-alt:hover .popup {
     font-size: 12px;
     padding: 8px;
 }
+
 button {
     font-weight: bold;
     position: absolute;
@@ -155,9 +150,15 @@ button {
     border: none;
     color: grey;
 }
-
 button:first-child {
   margin: 4px 0px;
+}
+button:last-child {
+    float: right;
+    width: 70px;
+    height: 25px;
+    color: #687080;
+    margin: 0 15px;
 }
 .fa-chevron-circle-left{
     color: #d7d8da;
@@ -186,39 +187,4 @@ display: inline-block;
     margin: 10px 0 12px 32px;
     background: #f1f0f0;
     border-radius: 5px;
-=======
-  position: absolute;
-  width: 60px;
-  height: 25px;
-  background: #555555;
-  text-align: center;
-  color: #eeeeee;
-  visibility: hidden;
 }
-button {
-  margin: 10px;
-  font-weight: bold;
-}
-
-button:first-child {
-  float: left;
-  width: 70px;
-  height: 25px;
-  border: none;
-  background: none;
-  color: #dadadc;
-  font-size: 10px;
-  margin-left: 45px;
-}
-button:last-child {
-  float: right;
-  width: 70px;
-  height: 25px;
-  color: #687080;
-  border: none;
-  background: #f1f0f0;
-  border-radius: 5px;
->>>>>>> fad943a242e4c346edf2adaef38794dd3f7c2770
-}
-
-
