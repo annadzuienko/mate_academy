@@ -141,16 +141,16 @@ button:first-child {
   margin-left: 250px; }
 
 .container__item {
-  display: inline-block;
+  display: block;
   width: 33%;
   height: 30px;
-  margin: 0;
+  margin: 10px;
   color: #ffcccc;
   font-size: 14px;
   font-family: "Helvetica";
   box-shadow: 1px 1px 1px 1px rgba(134, 108, 108, 0.5); }
   .container__item-text {
-    margin: 7px;
+    padding: 7px;
     display: block; }
 
 .colorful {
@@ -338,26 +338,30 @@ button:first-child {
 .colorful:nth-child(8n) {
   background: green; }
 
+.theme-small .button {
+  background: #1d1e22;
+  color: #fff;
+  width: 50px; }
+
+.theme-middle .button {
+  background: #666;
+  color: #ddca7d;
+  width: 75px; }
+
+.theme-big .button {
+  background: #f2f2f2;
+  color: #000;
+  width: 100px; }
+
 .button {
-  display: inline-block;
-  padding: .5em;
-  background: #ccc;
-  color: #666; }
-  .button-success {
-    background-color: #52bf4a;
-    color: #fff; }
-  .button-warning {
-    background-color: #c23435;
-    color: #fff; }
-  .button-info {
-    background-color: #757989;
-    color: #000; }
-  .button-default {
-    background-color: #2478ed;
-    color: #fff; }
-  .button-error {
-    background-color: #800000;
-    color: #666; }
+  display: block;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: .3em;
+  margin: .5em; }
+
+section {
+  display: inline-block; }
 
 1 {
   color: #ffcc1 + 1;
