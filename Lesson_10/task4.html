@@ -5,35 +5,58 @@
     <meta charset="utf-8">
   </head>
   <body>
+
     <style>
+
       polyline{
-  fill: none;
-  stroke: #fc1e69;
-  stroke-width: 4;
-}
-svg{
-  margin: 50px 150px; 
-}
-@keyframes change-background {
-  0% {
-    background: #c51754;
-  }
-  50% {
-    background: #820f38;
-  }
-  100% {
-    background: #350617;
-  }
-}
-svg:hover {
-  animation: change-background 4s linear infinite alternate;
-}
+        fill: none;
+        stroke: #fc1e69;
+        stroke-width: 4;
+      }
+      svg{
+        margin: 150px auto;
+        display: block;
+      }
+      rect {
+        position: absolute;
+        transform: translateX(150px);
+        width: 0px;
+        height: 150px;
+        transition: 1s ease-out;
+        opacity: 0;
+      }
+      @keyframes change-background {
+        100% {
+          transform: translateX(0px);
+          width: 300px;
+          opacity: 1;
+        }
+      }
+      svg:hover rect {
+        animation: change-background 0.5s linear infinite alternate;
+        animation-fill-mode: both;
+      }
+
+      text {
+        transition: 0.5s;
+      }
+      svg:hover text {
+        fill: #fff;
+      }
 
     </style>
+
     <svg height="52" width="300">
       <polyline points="1,1 1,50 300,50 300,1 1,1"></polyline>
+      <rect style="fill: #820f38; stroke-width:0;"></rect>
       <text y="30" x="110" fill="#fc1e69">Continue</text>
     </svg>
+    <svg height="52" width="300">
+      <polyline points="1,1 1,50 300,50 300,1 1,1"></polyline>
+      <rect style="fill: #820f38; stroke-width:0;"></rect>
+      <text y="30" x="110" fill="#fc1e69">Continue</text>
+    </svg>
+
   </body>
 </html>
 
