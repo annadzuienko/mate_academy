@@ -114,7 +114,7 @@ button:first-child {
     @include containerItem;
 
     &-text{
-        margin: 7px;
+        padding: 7px;
         display: block;
     }
 }
@@ -150,29 +150,56 @@ button:first-child {
   }
 }
 
-$buttons: (
- success: (#52bf4a, #fff),
-  warning: (#c23435, #fff),
-  info: (#757989, #000),
-  default: (#2478ed, #fff),
-  error: (#800000, #666),
+$themes: (
+  theme1: theme-small,
+  theme2: theme-middle,
+  theme3: theme-big
 );
- 
+
+@function setStyle($map, $object, $style) {
+  @if map-has-key($map, $object) {
+    @return map-get(map-get($map, $object), $style);
+  }
+}
+
+$config: (
+  theme1: (
+    background: #1d1e22,
+    color: #fff,
+    width: 50px
+  ),
+  theme2: (
+    background: #666,
+    color: #ddca7d,
+    width: 75px
+  ),
+  theme3: (
+    background: #f2f2f2,
+    color: #000,
+    width: 100px
+  )
+);
+
 .button {
-  display: inline-block;
-  padding: .5em;
-  background: #ccc;
-  color: #666;
-   
-  @each $name, $colors in $buttons {
-    $bgcolor: nth($colors, 1);
-    $fontcolor: nth($colors, 2);
-     
-    &-#{$name} {
-      background-color: $bgcolor;
-      color: $fontcolor;
+  @each $key, $value in $themes {
+    @if map-has-key($config, $key) {
+      .#{$value} & {
+        background: setStyle($config, $key, background);
+        color: setStyle($config, $key, color);
+        width: setStyle($config, $key, width);
+      }
     }
   }
 }
 
+.button {
+  display: block;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: .3em;
+  margin: .5em;
+}
 
+section {
+  display: inline-block;
+}

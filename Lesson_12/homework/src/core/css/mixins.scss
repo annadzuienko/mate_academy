@@ -29,10 +29,10 @@
 }
 
 @mixin containerItem {
-	display: inline-block;
+	display: block;
 	width: 33%;
 	height: 30px;
-	margin: 0;
+	margin: 10px;
 	color: $backColor;
 	font-size: $mainSize;
   	font-family: $fontFamily;
