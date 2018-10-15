@@ -8,7 +8,7 @@
   <title></title>
   
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 
@@ -27,7 +27,11 @@
 			<button class="account__log">Log in</button>
 			<a href="#" class="account__pswrd">Forgot password?</a>
 		</form>
-		<div class="account__sign">Or Sign in With</div>
+		<div class="account__sign">
+			<div class="account__line"></div>
+			<span>Or Sign in With</span>
+			<div class="account__line"></div>
+		</div>
 		<div class="account__socials">
 		<a href="#" class="account__social socials-twit">
             <i class="fab fa-twitter"></i>
@@ -92,6 +96,8 @@
 			<div class="registration__title-block">Country &#8432;</div>
 			<input type="text" name="country" value="" class="registration__form-block">
 			<br>
+			<input type="checkbox" name="agreement" value="" class="registration__form-checkbox">
+			<span>Agreed to Terms and Conditions</span>
 			<button class="registration__sign">Sign up</button>
 		</form> 
 	</div>
