@@ -48,6 +48,7 @@ var object = {
 	}
 };
 console.log(object.getDouble(6));
+// это нужно было сделать через objectDefineProperty
 
 // task 5
 var vasya = { name: 'Вася', age: 23 };
