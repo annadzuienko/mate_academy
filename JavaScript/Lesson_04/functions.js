@@ -21,8 +21,10 @@ function removeEmptyElements(arr) {
 	return arr;
 	
 	Array.isArray([]);
+	// это тут лишнее
 }
 console.log(removeEmptyElements([1,, 2,, 3,, 4,, 5,, 6,,]));
+// эту функцию нужно сделать рекурсией чтобы она работала с массивами любого уровня вложенности
 
 // task 4
 function sortReverse(arr) {
@@ -33,6 +35,7 @@ sortReverse([1,2,3,4,5]);
 // task 5
 var dateObjectName = new Date([]);
 console.log(Date());
+// тут нужно возвращать объект а не строку даты
 
 // task 6
 function getLength(object) {
@@ -51,6 +54,7 @@ function getName() {
 }
 getName();
 setTimeout(getName, 2000);
+// эта функция сработает только один раз а должна срабатвать каждые 2 секунды пока имя не подходит в твоему условию
 
 
 
