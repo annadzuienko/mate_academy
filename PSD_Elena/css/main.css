@@ -1,7 +1,7 @@
 body{
 	font-family: "PT Sans", "Arial";
 	color: #84878b;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
 }
@@ -33,11 +33,22 @@ button{
 	margin: 0 auto;
 	color: #fff;
 }
+i {
+	font-family: fontawesome !important;
+}
 header{
 	background: url(../images/bg.png) no-repeat center / cover;
 	margin: 0;
 	min-height: 600px;
 	position: relative;
+}
+header div {
+	font-family: 'Dancing Script', cursive;
+	font-size: 52px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding: 60px 0 40px 0;
 }
 .header__logo{
 	margin: auto;
@@ -84,18 +95,42 @@ header p{
     font-weight: bold;
     color: #fff;
     border-radius: 22px;
+    transition-property: background, box-shadow;
+    transition-duration: 1s;
+}
+.header__button:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+    background: #d2d5da;
 }
 #menu{
 	background: #eeeeef;
 	height: 280px;
 }
 .menu__item{
-	width: 10%;
-    margin: 0 70px;
+    width: 11%;
+    margin: 55px 35px;
+    text-align: center;
 }
 .menu__item h4, .menu__item p{
 	text-align: center;
 }
+.far, .fas{
+	font-size: 2rem;
+	font-style: normal;
+	color: #50c3af;
+}
+.fal{
+	font-size: 2rem;
+	font-style: normal;
+	color: #c5cbd1;
+}
+.fa-edit{
+	color: #c5cbd1;	
+}
+.fa-star{
+	color: #fff;
+}
+
 .line__grey{
 	border-bottom: 1px solid #e3e3e4;
 	margin: 20px 0 25px 0;
@@ -106,7 +141,7 @@ header p{
 }
 .services__item{
 	width: 21%;
-    margin: 0 90px 0 0;
+    margin: 0 60px 0 0;
 }
 .services__item:last-child{
 	margin: 0;
@@ -115,6 +150,12 @@ header p{
 	background: #50c3af;
 	margin: 40px auto 0 0;
 	display: block;
+	transition-property: background, box-shadow;
+    transition-duration: 1s;
+}
+.menthol:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+    background: #d2d5da;
 }
 .services__item img{
 	margin-top: 65px;
@@ -129,7 +170,7 @@ header p{
 	margin: 75px 0 0 0;
 }
 .supported{
-	margin: 55px 25%;
+	margin: 55px 26.5%;
 	position: absolute;
 }
 .supported span{
@@ -137,18 +178,25 @@ header p{
 	color: #000;
 	font-weight: bold;
 	margin-left: 15px;
+	margin-top: 6px;
 	font-size: 14px;
 	position: absolute;
 }
 .grey{
 	background: #d2d5da;
 	margin-left: 0;
+	transition-property: background, box-shadow;
+    transition-duration: 1s;
+}
+.grey:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+    background: #50c3af;
 }
 .supported p{
 	font-size: 14px;
 }
 .advanced{
-	width: 14.5%;
+    width: 14.5%;
     margin: 60px 12px 0 12px;
     text-align: left;
 }
@@ -161,10 +209,15 @@ header p{
 .advanced a{
 	color: #50c3af;
 	margin-top: 30px; 
+	transition-property: color;
+    transition-duration: 1s;
+}
+.advanced a:hover {
+    color: #85888c;
 }
 .user{
 	width: 21%;
-	margin: 60px 60px 0 0;
+	margin: 60px 80px 0 0;
 }
 .user:last-child{
 	margin-right: 0;
@@ -181,7 +234,7 @@ header p{
 }
 .article__block{
 	width: 50%;
-	margin: 60px 25px;
+	margin: 60px 40px;
 	text-align: right;
 }
 .article__block:last-child{
@@ -206,18 +259,33 @@ header p{
 	text-align: center;
 }
 .container{
-	width: 300px;
-    margin: 50px 40%;
+    margin: 50px 39%;
     position: absolute;
+    text-align: center;
 }
-.footer__client{
-	display: inline-block;
-	width: 15%;
-	padding: 125px 0;
+.client{
+	position: absolute;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
-.footer__client:first-child{
-	padding-left: 23%;
+.client span{
+    display: inline-block;
+    width: 14%;
+    padding: 130px 0 0 0;
+    color: #c2eae3;
+    font-size: 26px;
+    margin: 0;
 }
+.client span:first-child {
+	font-family: 'Dancing Script', cursive;
+	text-transform: lowercase;
+}
+.client span:nth-child(2) {
+	font-family: 'Comfortaa', cursive;
+	text-transform: lowercase;
+}
+
 .footer__dev{
 	margin: 20px 0 20px 20%; 
 	float: left;
@@ -236,27 +304,14 @@ header p{
     transition: background 200ms ease-in;
     margin: 0 5px;
 }
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.far {
-	font-size: 12px;
-	color: #d2d5da;
-}
+
 @media screen and (min-width: 320px) and (max-width: 767px){
-	body{
-		font-size: 14px;
-	}
+
 	header{
-		min-height: 450px;
+		min-height: 500px;
 	}
 	h1{
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 	header p{
 		margin-bottom: 50px;
@@ -290,7 +345,10 @@ header p{
 	}
 	.menu__item {
     	width: 50%;
-    	margin: auto;
+    	margin: 15px auto;
+    }
+    .menu__item:first-child {
+    	margin-top: 50px;
     }
     .services__item {
     	margin: 0 auto;
@@ -349,16 +407,15 @@ header p{
 		margin-top: 50px;
 	}
 	.container {
-    	margin: 30px 12%;
+    	margin: 30px auto;
+    	width: 100%;
 	}
-	#client{
+	.client{
 		padding-top: 70px;
-		text-align: center;
 	}
-	.footer__client {
-	    padding: 5px 0 0 0;
-	    display: block;
-		width: 100%;
+	.client span{
+	    padding: 15px 0;
+    	width: 47%;
 	}
 	.footer__client:first-child {
 	    padding-left: 0;
@@ -377,4 +434,6 @@ header p{
 		padding-left: 0;
 	}
 }
+
+
 
