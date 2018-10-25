@@ -33,6 +33,7 @@ sortReverse([1,2,3,4,5]);
 // task 5
 var dateObjectName = new Date([]);
 console.log(Date());
+// here you should return an object with 3 keys, I didn't see it here
 
 // task 6
 function getLength(object) {
@@ -51,6 +52,7 @@ function getName() {
 }
 getName();
 setTimeout(getName, 2000);
+// this will only works once, but you should make it work untill the name will have the result you want( eg: some spesific name and you check for it, like: name == "Anna"
 
 
 
