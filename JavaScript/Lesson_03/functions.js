@@ -39,15 +39,33 @@ function min(a,b) {
 console.log(min(7,5));
 
 // task 4
-var object = {
-	number: 9,
-	cantDelete: 4,
-	getDouble: function(n) {
-		var num = n * 2;
-		return num / 3;
-	}
-};
-console.log(object.getDouble(6));
+var obj = {};
+
+Object.defineProperty(obj, "number", {
+	value: 9,
+	enumerable: false,
+	configurable: true,
+	writable: true
+});
+for(var key in obj){
+	console.log(key);
+}
+
+Object.defineProperty(obj, "cantDelete", {
+	enumerable: true,
+	configurable: false,
+	writable: true,
+	value: ""
+});
+console.log(delete obj.cantDelete);
+
+Object.defineProperty(obj, "getDouble", {
+	get: function(arg) {return arg/3;},
+	set: function(arg) {return arg*2;},
+	enumerable: true,
+  	configurable: true
+});
+console.log(obj);
 
 // task 5
 var vasya = { name: 'Вася', age: 23 };
@@ -81,7 +99,4 @@ function unique(arr) {
 
 var strings = ['qwerty', 'qwerty', 'jkl', 'fdsa', 'fdsa', 'jkl'];
 console.log(unique(strings));
-
-
-
 
