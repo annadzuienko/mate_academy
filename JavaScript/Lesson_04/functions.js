@@ -17,12 +17,14 @@ function removeEmptyElements(arr) {
 			arr.splice(i, 1);
 			i--;
 		}
-	}
-	return arr;
-	
-	Array.isArray([]);
+    else if(Array.isArray(arr[i])) {
+      return removeEmptyElements(arr[i]);
+    }
+  }
+  return arr;
 }
 console.log(removeEmptyElements([1,, 2,, 3,, 4,, 5,, 6,,]));
+
 
 // task 4
 function sortReverse(arr) {
@@ -31,8 +33,22 @@ function sortReverse(arr) {
 sortReverse([1,2,3,4,5]);
 
 // task 5
-var dateObjectName = new Date([]);
-console.log(Date());
+var date = new Date();
+
+function dataObject(date) {
+  var objDate;
+  if(date instanceof Date) {
+    return objDate = {
+      dd: date.getDate(),
+      mm: date.getMonth() + 1,
+      yy: date.getFullYear()
+    };
+  }
+  return objDate;
+};
+
+console.log(dataObject(date));
+
 
 // task 6
 function getLength(object) {
@@ -41,18 +57,15 @@ function getLength(object) {
   		canWalk: true,
   		color: 'brown'
 	}
-	alert(Object.keys(animal).length);
+	//alert(Object.keys(animal).length);
 }
 setTimeout(getLength, 1000);
 
 // task 7
-function getName() {
-	var years = prompt('Enter your name', '');
-}
-getName();
-setTimeout(getName, 2000);
-
-
+var name = setInterval(function() {
+	var user = prompt('Enter your name', '');
+  if(user !== "") clearInterval(name);
+}, 2000);
 
 
 
