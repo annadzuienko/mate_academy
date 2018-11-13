@@ -5,15 +5,15 @@ arr.splice(0, 1);
 arr.splice(5, 1);
 console.log (arr);
 
-// task 2 // not work
+// task 2
 function isPal(string) {
-  stringReverse = string.toLowerCase().replace(/\s/g, '').split('').reverse().join('');
-    if (stringReverse == string) {
-      return true;
-    } else {
-      return false;
-    }
+  let stringReverse = string.replace(/\s+/g, '').toLowerCase();
+  if (stringReverse == string.replace(/\s+/g, '').toLowerCase().split('').reverse().join('')) {
+    return true;
+  } else {
+    return false;
   }
+}
 console.log(isPal('Аnna'));
 console.log(isPal('А роза упала на лапу Азора'));
 console.log(isPal('Вася'));
@@ -65,7 +65,7 @@ console.log(result);
 result = 0;
 
 function callMe(num1, num2, num3) {
-  if (num1 !== NaN && num2 !== NaN && num3 !== NaN) {
+  if (typeof num1 === 'number' && typeof num2 === 'number' && typeof num3 === 'number') {
     console.log(result = num1 + num2 + num3);
   } 
   else {
@@ -75,11 +75,11 @@ function callMe(num1, num2, num3) {
 }
 callMe(1, 2, 3);
 
-// task 7 // not work
+// task 7
 newArr=['qwerty'];
 
 function callMeAgain(arr) {
-	arr = arr.sort().join(',');
+	arr = arr.join(',').replace(/,/g, '').split('').sort();
 	return arr;
 }
 
@@ -105,15 +105,33 @@ for(i = 0; i < arr.length; i++) {
   console.log(arr[i].name, arr[i].age);
 }
 
-// task 9 // not work correctly
-var arr = [{name: name, age: age}];
-var name = prompt("Enter your name"); 
-var age = prompt("Enter your age"); 
+// task 9
+function addUser() {
+  var arr = [
+     {name: "L1", age: 45},
+     {name: "L1", age: 20},
+     {name: "L1", age: 10},
+     {name: "L1", age: 78},
+     {name: "L1", age: 41},
+     {name: "L1", age: 10}
+  ];
+  var name = prompt("Enter your name");
+  var age = prompt("Enter your age");
+  var exist = false;
 
-arr[key] = {name, age};
-for (var key in arr) arr.push(arr[key]);
-
-console.log(arr);
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].name == name && arr[i].age == age) {
+      alert("User already exists"); 
+      exist = true;
+      break;
+    }
+  }
+  if (!exist) {
+    arr.push({name: name, age: +age});
+  }
+  return arr;
+}
+console.log(addUser());
 
 // task 10
 var myArr = [13, 35, 3, 443],
@@ -183,7 +201,20 @@ var arr1 = [1,2,3],
 console.log(duplicates);
 
 // task 15
+var arr = [2, 3, 1, 4], 
+    newArr = [],
+    num;
 
+function add(arr){
+  for (var i = 0; i < arr.length; i++){
+    num = arr[i];
+    for (var j = 0; j < num; j++) {
+         newArr.push(num);
+    }
+  }
+  return newArr;
+  }
+console.log(add(arr));
 
 // task 16
 var arrayWithNull = [1, 2, 3];
@@ -192,7 +223,21 @@ arrayWithNull.splice(3, 0, 0, 0, 0);
 console.log(arrayWithNull);
 
 // task 17
+var arr = [-1, -2, -3, 0, 1, 2, 3, -1, -2, -6, 0, 1, 2, 3];
+// Три самых маленьких числа в массиве (числа должны быть разные, дубли должны быть проигнорированы)
+arr.sort(function(a, b) {
+  return a - b;
+});
+console.log(arr);
+var newArr = Array.from(new Set(arr));
+console.log(newArr.slice(0, 3));
 
+// Первые 3 отрицательных числа в массиве (по порядку следования)
+var arr = [-10, -2, -3, 0, 1, 2, 3, -1, -2, -6, 0, 1, 2, 3];
+var newArray = arr.filter(function(number) {
+  return number < 0;
+});
+console.log(newArray.slice(0,3));
 
 
 

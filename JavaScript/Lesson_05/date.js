@@ -39,6 +39,25 @@ console.log(square(379).toFixed(2));
 console.log(Math.floor(Math.random() * 100) + 1  );
 
 // task 6
+// x^2 + 4x + 9 = 0
+var D = 0,
+	x = 0,
+	x1 = 0,
+	x2 = 0;
+function discriminant(a, b, c) {
+	D = (Math.pow(b,2)) - 4*a*c;
+
+	if (D > 0) {
+		x1 = ( (-b + Math.sqrt(D)) / (2 * a) );
+		x2 = ( (-b - Math.sqrt(D)) / (2 * a) );
+		return x1, x2;
+	} else if (D === 0) {
+		return x = ( (-b + Math.sqrt(D)) / (2 * a) );
+	} else {
+		return 'Equation has no roots';
+	}
+}
+console.log(discriminant(1, -8, 12));
 
 // task 7
 var n = 90;
