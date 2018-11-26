@@ -1,0 +1,23 @@
+.conteiner {
+	margin: 25px;
+}
+
+.input-group {
+	margin: 25px;
+}
+
+button {
+	margin: 0 25px;
+}
+
+h1 {
+	color: #017afe;
+	font-weight: bold;
+}
+
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
