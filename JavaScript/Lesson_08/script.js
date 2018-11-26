@@ -23,9 +23,6 @@ $(function () {
 	$list.on('click', '.badge', function(event) {
 		$(this).closest('li').remove();
 	});
-  
-// $(this).data('page', 5) - добавляем дата-атрибут, в скобках (название, значение)
-// <li datа-page = 5> - дата-атрибутов нужны для js, как 
 
   	
   	$list.on('mouseenter','.list-group-item', function (event) {
@@ -36,14 +33,6 @@ $(function () {
         	$('.show').hide();
     	});
 	});
-
-
-
-  	/*$addButton.on('click', function () {
-  		let text = $(this).text();
-  		$allLi.val(text);
-  	});*/
-
 
 });  
 
