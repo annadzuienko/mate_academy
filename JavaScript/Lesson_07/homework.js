@@ -4,7 +4,7 @@ function User(fullName) {
   this.fullName = fullName;
   Object.defineProperty(this, 'firstName', {
     get: function() {
-            var name = this.fullName.split(' ');
+            var name = fullName.split(' ');
             return name[0]; 
          },
     set: function(newName) {
@@ -67,15 +67,6 @@ function Calculator() {
     '-': function(a, b) {
       return a - b;
     },
-    '*': function(a, b) {
-      return a * b;
-    },
-    '/': function(a, b) {
-      return a / b;
-    },
-    '**': function(a, b) {
-      return Math.pow(a, b);
-    }
   };
   this.calculate = function(str) {
     var arr = str.split(' '),
@@ -109,18 +100,6 @@ console.log(powerCalc.calculate('2 * 3'));
 console.log(powerCalc.calculate('2 / 3'));
 console.log(powerCalc.calculate('2 - 3'));
 
-
-// когда делала задание по калькулятору нашла метод eval,
-// который можно использовать для вычесления 
-function Calculator2() {
-  this.calculate2 = function(str) {
-    return eval(str);
-  }
-}
-
-var clc = new Calculator2;
-
-console.log(clc.calculate2('2 - 3'));
 
 
 
